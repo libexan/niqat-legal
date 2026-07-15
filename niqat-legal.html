@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIQAT — Legal Documents</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #F5F0EB; color: #1A1A1A; }
+    .header { background: #1A4A45; color: white; padding: 40px 24px; text-align: center; }
+    .header h1 { font-size: 28px; font-weight: 700; letter-spacing: 2px; }
+    .header p { color: #7FB5AE; margin-top: 8px; font-size: 14px; }
+    .tabs { display: flex; background: white; border-bottom: 1px solid #E4DDD3; position: sticky; top: 0; z-index: 10; }
+    .tab { flex: 1; padding: 16px; text-align: center; cursor: pointer; font-size: 14px; font-weight: 500; color: #888; border-bottom: 3px solid transparent; transition: all 0.2s; }
+    .tab.active { color: #1A4A45; border-bottom-color: #1A4A45; }
+    .content { max-width: 800px; margin: 0 auto; padding: 32px 24px; }
+    .doc { display: none; }
+    .doc.active { display: block; }
+    h2 { font-size: 22px; color: #1A4A45; margin: 32px 0 12px; }
+    h2:first-child { margin-top: 0; }
+    h3 { font-size: 16px; color: #1A1A1A; margin: 20px 0 8px; font-weight: 600; }
+    p { font-size: 15px; line-height: 1.7; color: #444; margin-bottom: 12px; }
+    ul { margin: 8px 0 12px 24px; }
+    li { font-size: 15px; line-height: 1.7; color: #444; margin-bottom: 6px; }
+    .updated { background: white; border: 1px solid #E4DDD3; border-radius: 8px; padding: 12px 16px; margin-bottom: 24px; font-size: 13px; color: #888; }
+    .updated strong { color: #1A4A45; }
+    .contact-box { background: #1A4A45; color: white; border-radius: 12px; padding: 20px; margin-top: 32px; }
+    .contact-box h3 { color: #E8A44A; margin-top: 0; }
+    .contact-box p { color: #7FB5AE; margin-bottom: 4px; }
+    .contact-box a { color: white; }
+    .lang-switch { text-align: center; padding: 16px; font-size: 13px; color: #888; }
+    .lang-switch a { color: #1A4A45; text-decoration: none; font-weight: 500; }
+
+    /* Arabic styles */
+    .arabic { direction: rtl; text-align: right; }
+    .arabic h2, .arabic h3, .arabic p, .arabic li { font-family: 'Arial', sans-serif; }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>NIQAT — نقاط</h1>
+  <p>Legal Documents · المستندات القانونية</p>
+</div>
+
+<div class="tabs">
+  <div class="tab active" onclick="showDoc('privacy-en')">Privacy Policy</div>
+  <div class="tab" onclick="showDoc('terms-en')">Terms & Conditions</div>
+  <div class="tab" onclick="showDoc('privacy-ar')">سياسة الخصوصية</div>
+  <div class="tab" onclick="showDoc('terms-ar')">الشروط والأحكام</div>
+</div>
+
+<!-- PRIVACY POLICY - ENGLISH -->
+<div class="content">
+<div id="privacy-en" class="doc active">
+  <div class="updated"><strong>Last updated:</strong> July 15, 2026</div>
+
+  <h2>Privacy Policy</h2>
+  <p>NIQAT ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information about you when you use our mobile application and related services.</p>
+
+  <h2>1. Information We Collect</h2>
+  <h3>Information you provide:</h3>
+  <ul>
+    <li>First and last name</li>
+    <li>Email address</li>
+    <li>Phone number (merchants only)</li>
+    <li>Business name, category, city, and description (merchants only)</li>
+    <li>Profile and cover photos (merchants only)</li>
+    <li>Social media links and website URL (merchants only)</li>
+    <li>Password (stored securely as a hash — never in plain text)</li>
+  </ul>
+
+  <h3>Information collected automatically:</h3>
+  <ul>
+    <li>Location data (when you allow it, to show nearby merchants)</li>
+    <li>NFC stamp activity (which merchants you visited and when)</li>
+    <li>Device push notification token (for in-app notifications)</li>
+    <li>App usage information (screens visited, features used)</li>
+  </ul>
+
+  <h2>2. How We Use Your Information</h2>
+  <ul>
+    <li>To create and manage your NIQAT account</li>
+    <li>To verify your email address</li>
+    <li>To record and display your loyalty stamps and rewards</li>
+    <li>To show you nearby participating merchants</li>
+    <li>To send you account-related emails (verification, password reset)</li>
+    <li>To send you notifications about rewards and announcements</li>
+    <li>To allow merchants to see their active customers and stamp activity</li>
+    <li>To improve our services and fix issues</li>
+    <li>To respond to your support requests</li>
+  </ul>
+
+  <h2>3. How We Share Your Information</h2>
+  <p>We do not sell your personal information. We share it only in these limited circumstances:</p>
+  <ul>
+    <li><strong>With merchants:</strong> When you collect a stamp at a merchant, they can see your stamp count at their business. They cannot see your email, phone, or activity at other merchants.</li>
+    <li><strong>With service providers:</strong> We use the following trusted services to operate NIQAT:
+      <ul>
+        <li>Resend (resend.com) — for sending emails</li>
+        <li>MongoDB Atlas — for secure data storage</li>
+        <li>Railway (railway.app) — for hosting our backend</li>
+        <li>Expo (expo.dev) — for building and distributing the app</li>
+      </ul>
+    </li>
+    <li><strong>For legal reasons:</strong> If required by law or to protect the rights and safety of our users.</li>
+  </ul>
+
+  <h2>4. Data Retention</h2>
+  <p>We keep your data for as long as your account is active. If you delete your account, we will delete your personal data within 30 days, except where we are required to keep it for legal reasons.</p>
+
+  <h2>5. Your Rights</h2>
+  <ul>
+    <li><strong>Access:</strong> You can view your account information in the app at any time</li>
+    <li><strong>Correction:</strong> You can update your profile information in Account settings</li>
+    <li><strong>Deletion:</strong> You can request account deletion by contacting our support team</li>
+    <li><strong>Notifications:</strong> You can disable push notifications in your device settings</li>
+    <li><strong>Location:</strong> You can disable location access in your device settings at any time</li>
+  </ul>
+
+  <h2>6. Children's Privacy</h2>
+  <p>NIQAT is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
+
+  <h2>7. Security</h2>
+  <p>We take reasonable measures to protect your information, including encrypted password storage, HTTPS for all data transmission, and JWT-based authentication. However, no system is 100% secure.</p>
+
+  <h2>8. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. We will notify you of significant changes via email or in-app notification. Continued use of NIQAT after changes means you accept the updated policy.</p>
+
+  <div class="contact-box">
+    <h3>Contact Us</h3>
+    <p>If you have questions about this Privacy Policy or your personal data:</p>
+    <p>📧 <a href="mailto:niqat.support@libexan.com">niqat.support@libexan.com</a></p>
+  </div>
+</div>
+
+<!-- TERMS & CONDITIONS - ENGLISH -->
+<div id="terms-en" class="doc">
+  <div class="updated"><strong>Last updated:</strong> July 15, 2026</div>
+
+  <h2>Terms & Conditions</h2>
+  <p>By downloading, installing, or using the NIQAT application, you agree to be bound by these Terms and Conditions. Please read them carefully.</p>
+
+  <h2>1. About NIQAT</h2>
+  <p>NIQAT is a digital loyalty stamp platform that connects customers with local businesses. Customers collect stamps by tapping NFC tags at participating merchant locations and earn rewards when they reach stamp milestones.</p>
+
+  <h2>2. Account Registration</h2>
+  <ul>
+    <li>You must provide accurate and complete information when creating an account</li>
+    <li>You must verify your email address to activate your account</li>
+    <li>You are responsible for maintaining the security of your password</li>
+    <li>You must be at least 13 years old to use NIQAT</li>
+    <li>One person may not create multiple accounts</li>
+  </ul>
+
+  <h2>3. Customer Terms</h2>
+  <ul>
+    <li>Stamps are collected by tapping your phone on official NIQAT NFC tags at merchant locations</li>
+    <li>Stamps cannot be transferred between accounts</li>
+    <li>Rewards must be redeemed at the issuing merchant and are subject to the merchant's availability</li>
+    <li>NIQAT is not responsible if a merchant refuses to honour a reward</li>
+    <li>Stamps and rewards have no monetary value and cannot be exchanged for cash</li>
+    <li>NIQAT reserves the right to remove fraudulently obtained stamps</li>
+  </ul>
+
+  <h2>4. Merchant Terms</h2>
+  <ul>
+    <li>Merchant accounts require admin approval before becoming active</li>
+    <li>Merchants must provide accurate business information</li>
+    <li>Merchants are responsible for honouring the rewards they offer to customers</li>
+    <li>Merchants may not manipulate the stamp system or issue fraudulent stamps</li>
+    <li>NIQAT reserves the right to suspend or remove merchant accounts that violate these terms</li>
+    <li>NFC tags are issued by NIQAT and remain our property</li>
+    <li>Merchants must not tamper with or reproduce NFC tags</li>
+  </ul>
+
+  <h2>5. Prohibited Activities</h2>
+  <p>You may not:</p>
+  <ul>
+    <li>Use NIQAT for any unlawful purpose</li>
+    <li>Attempt to hack, reverse engineer, or manipulate the app or backend</li>
+    <li>Create fake accounts or collect stamps fraudulently</li>
+    <li>Harass other users or merchants</li>
+    <li>Use automated tools to interact with the service</li>
+    <li>Reproduce or sell NIQAT NFC tags</li>
+  </ul>
+
+  <h2>6. Intellectual Property</h2>
+  <p>All content in the NIQAT app, including the logo, design, and software, is owned by NIQAT and protected by intellectual property laws. You may not copy, modify, or distribute any part of our app without permission.</p>
+
+  <h2>7. Disclaimer of Warranties</h2>
+  <p>NIQAT is provided "as is" without warranties of any kind. We do not guarantee that the service will be uninterrupted, error-free, or that rewards will always be available from merchants.</p>
+
+  <h2>8. Limitation of Liability</h2>
+  <p>NIQAT is not liable for any indirect, incidental, or consequential damages arising from your use of the app, including loss of stamps or rewards due to technical issues.</p>
+
+  <h2>9. Account Termination</h2>
+  <p>We reserve the right to suspend or terminate accounts that violate these Terms. You may delete your account at any time by contacting support.</p>
+
+  <h2>10. Changes to Terms</h2>
+  <p>We may update these Terms from time to time. Continued use of NIQAT after changes constitutes acceptance of the new Terms.</p>
+
+  <h2>11. Governing Law</h2>
+  <p>These Terms are governed by the laws of Ireland. Any disputes shall be resolved in the courts of Ireland.</p>
+
+  <div class="contact-box">
+    <h3>Contact Us</h3>
+    <p>If you have questions about these Terms:</p>
+    <p>📧 <a href="mailto:niqat.support@libexan.com">niqat.support@libexan.com</a></p>
+  </div>
+</div>
+
+<!-- PRIVACY POLICY - ARABIC -->
+<div id="privacy-ar" class="doc arabic">
+  <div class="updated"><strong>آخر تحديث:</strong> 15 يوليو 2026</div>
+
+  <h2>سياسة الخصوصية</h2>
+  <p>تلتزم نقاط ("نحن" أو "لنا") بحماية خصوصيتك. توضح سياسة الخصوصية هذه كيفية جمع معلوماتك واستخدامها ومشاركتها عند استخدام تطبيقنا للجوال والخدمات ذات الصلة.</p>
+
+  <h2>١. المعلومات التي نجمعها</h2>
+  <h3>المعلومات التي تقدمها:</h3>
+  <ul>
+    <li>الاسم الأول والأخير</li>
+    <li>عنوان البريد الإلكتروني</li>
+    <li>رقم الهاتف (للتجار فقط)</li>
+    <li>اسم النشاط التجاري والفئة والمدينة والوصف (للتجار فقط)</li>
+    <li>صور الملف الشخصي والغلاف (للتجار فقط)</li>
+    <li>روابط وسائل التواصل الاجتماعي وعنوان الموقع الإلكتروني (للتجار فقط)</li>
+    <li>كلمة المرور (مخزنة بأمان كرمز مشفر — لا تُخزن أبدًا كنص عادي)</li>
+  </ul>
+
+  <h3>المعلومات المجمعة تلقائيًا:</h3>
+  <ul>
+    <li>بيانات الموقع الجغرافي (عند السماح بذلك، لعرض التجار القريبين)</li>
+    <li>نشاط الختم عبر NFC (التجار الذين زرتهم ووقت الزيارة)</li>
+    <li>رمز إشعارات الجهاز (للإشعارات داخل التطبيق)</li>
+    <li>معلومات استخدام التطبيق (الشاشات التي تمت زيارتها والميزات المستخدمة)</li>
+  </ul>
+
+  <h2>٢. كيفية استخدام معلوماتك</h2>
+  <ul>
+    <li>إنشاء حسابك في نقاط وإدارته</li>
+    <li>التحقق من عنوان بريدك الإلكتروني</li>
+    <li>تسجيل الأختام والمكافآت وعرضها</li>
+    <li>عرض التجار المشاركين القريبين منك</li>
+    <li>إرسال رسائل البريد الإلكتروني المتعلقة بالحساب (التحقق وإعادة تعيين كلمة المرور)</li>
+    <li>إرسال إشعارات حول المكافآت والإعلانات</li>
+    <li>السماح للتجار برؤية عملائهم النشطين ونشاط الختم</li>
+    <li>تحسين خدماتنا وإصلاح المشكلات</li>
+    <li>الرد على طلبات الدعم الخاصة بك</li>
+  </ul>
+
+  <h2>٣. كيفية مشاركة معلوماتك</h2>
+  <p>نحن لا نبيع معلوماتك الشخصية. نشاركها فقط في هذه الحالات المحدودة:</p>
+  <ul>
+    <li><strong>مع التجار:</strong> عند جمع ختم لدى تاجر، يمكنه رؤية عدد أختامك في نشاطه التجاري فقط. لا يمكنه رؤية بريدك الإلكتروني أو هاتفك أو نشاطك لدى تجار آخرين.</li>
+    <li><strong>مع مزودي الخدمة:</strong> نستخدم الخدمات الموثوقة التالية لتشغيل نقاط: Resend للبريد الإلكتروني، MongoDB Atlas لتخزين البيانات، Railway للاستضافة، Expo لبناء التطبيق وتوزيعه.</li>
+    <li><strong>لأسباب قانونية:</strong> إذا طُلب منا ذلك بموجب القانون أو لحماية حقوق وسلامة مستخدمينا.</li>
+  </ul>
+
+  <h2>٤. الاحتفاظ بالبيانات</h2>
+  <p>نحتفظ ببياناتك طالما كان حسابك نشطًا. إذا حذفت حسابك، فسنحذف بياناتك الشخصية خلال 30 يومًا.</p>
+
+  <h2>٥. حقوقك</h2>
+  <ul>
+    <li><strong>الوصول:</strong> يمكنك عرض معلومات حسابك في التطبيق في أي وقت</li>
+    <li><strong>التصحيح:</strong> يمكنك تحديث معلومات ملفك الشخصي في إعدادات الحساب</li>
+    <li><strong>الحذف:</strong> يمكنك طلب حذف الحساب بالتواصل مع فريق الدعم</li>
+    <li><strong>الإشعارات:</strong> يمكنك تعطيل الإشعارات في إعدادات جهازك</li>
+    <li><strong>الموقع:</strong> يمكنك تعطيل الوصول إلى الموقع في إعدادات جهازك</li>
+  </ul>
+
+  <h2>٦. خصوصية الأطفال</h2>
+  <p>نقاط غير مخصص للأطفال دون سن 13 عامًا. لا نجمع عن قصد معلومات شخصية من الأطفال دون سن 13.</p>
+
+  <h2>٧. الأمان</h2>
+  <p>نتخذ تدابير معقولة لحماية معلوماتك، بما في ذلك تشفير كلمات المرور، وHTTPS لجميع عمليات نقل البيانات، والمصادقة القائمة على JWT.</p>
+
+  <h2>٨. التغييرات على هذه السياسة</h2>
+  <p>قد نحدّث سياسة الخصوصية هذه من وقت لآخر. سنخطرك بالتغييرات المهمة عبر البريد الإلكتروني أو إشعار داخل التطبيق.</p>
+
+  <div class="contact-box">
+    <h3>تواصل معنا</h3>
+    <p>إذا كان لديك أسئلة حول سياسة الخصوصية أو بياناتك الشخصية:</p>
+    <p>📧 <a href="mailto:niqat.support@libexan.com">niqat.support@libexan.com</a></p>
+  </div>
+</div>
+
+<!-- TERMS & CONDITIONS - ARABIC -->
+<div id="terms-ar" class="doc arabic">
+  <div class="updated"><strong>آخر تحديث:</strong> 15 يوليو 2026</div>
+
+  <h2>الشروط والأحكام</h2>
+  <p>بتنزيل تطبيق نقاط أو تثبيته أو استخدامه، فإنك توافق على الالتزام بهذه الشروط والأحكام. يُرجى قراءتها بعناية.</p>
+
+  <h2>١. عن نقاط</h2>
+  <p>نقاط هي منصة ختم ولاء رقمية تربط العملاء بالشركات المحلية. يجمع العملاء الأختام عن طريق النقر بهواتفهم على علامات NFC في مواقع التجار المشاركين ويكسبون مكافآت عند الوصول إلى أهداف الختم.</p>
+
+  <h2>٢. تسجيل الحساب</h2>
+  <ul>
+    <li>يجب تقديم معلومات دقيقة وكاملة عند إنشاء الحساب</li>
+    <li>يجب التحقق من عنوان بريدك الإلكتروني لتفعيل حسابك</li>
+    <li>أنت مسؤول عن الحفاظ على أمان كلمة مرورك</li>
+    <li>يجب أن يكون عمرك 13 عامًا على الأقل لاستخدام نقاط</li>
+    <li>لا يجوز لشخص واحد إنشاء حسابات متعددة</li>
+  </ul>
+
+  <h2>٣. شروط العملاء</h2>
+  <ul>
+    <li>تُجمع الأختام عن طريق النقر بهاتفك على علامات NFC الرسمية لنقاط في مواقع التجار</li>
+    <li>لا يمكن نقل الأختام بين الحسابات</li>
+    <li>يجب استرداد المكافآت لدى التاجر المُصدِر وتخضع لتوفره</li>
+    <li>نقاط غير مسؤولة إذا رفض التاجر تكريم مكافأة</li>
+    <li>الأختام والمكافآت ليس لها قيمة نقدية ولا يمكن استبدالها بنقود</li>
+  </ul>
+
+  <h2>٤. شروط التجار</h2>
+  <ul>
+    <li>تتطلب حسابات التجار موافقة المسؤول قبل أن تصبح نشطة</li>
+    <li>يجب على التجار تقديم معلومات تجارية دقيقة</li>
+    <li>التجار مسؤولون عن تكريم المكافآت التي يقدمونها للعملاء</li>
+    <li>علامات NFC صادرة من نقاط وتظل ملكيتنا</li>
+    <li>يُحظر على التجار العبث بعلامات NFC أو نسخها</li>
+  </ul>
+
+  <h2>٥. الأنشطة المحظورة</h2>
+  <ul>
+    <li>استخدام نقاط لأي غرض غير مشروع</li>
+    <li>محاولة اختراق التطبيق أو التلاعب به</li>
+    <li>إنشاء حسابات وهمية أو جمع أختام بطريقة احتيالية</li>
+    <li>مضايقة المستخدمين أو التجار الآخرين</li>
+    <li>نسخ أو بيع علامات NFC الخاصة بنقاط</li>
+  </ul>
+
+  <h2>٦. الملكية الفكرية</h2>
+  <p>جميع محتويات تطبيق نقاط، بما في ذلك الشعار والتصميم والبرمجيات، مملوكة لنقاط ومحمية بموجب قوانين الملكية الفكرية.</p>
+
+  <h2>٧. إخلاء المسؤولية</h2>
+  <p>يُقدَّم تطبيق نقاط "كما هو" دون ضمانات من أي نوع. لا نضمن أن الخدمة ستكون متاحة دون انقطاع أو خالية من الأخطاء.</p>
+
+  <h2>٨. تعديل الشروط</h2>
+  <p>قد نحدّث هذه الشروط من وقت لآخر. يُعدّ الاستمرار في استخدام نقاط بعد التغييرات قبولًا للشروط الجديدة.</p>
+
+  <h2>٩. القانون الحاكم</h2>
+  <p>تخضع هذه الشروط لقوانين أيرلندا. تُحسم أي نزاعات في محاكم أيرلندا.</p>
+
+  <div class="contact-box">
+    <h3>تواصل معنا</h3>
+    <p>إذا كان لديك أسئلة حول هذه الشروط:</p>
+    <p>📧 <a href="mailto:niqat.support@libexan.com">niqat.support@libexan.com</a></p>
+  </div>
+</div>
+
+</div>
+
+<script>
+  function showDoc(id) {
+    document.querySelectorAll('.doc').forEach(d => d.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
